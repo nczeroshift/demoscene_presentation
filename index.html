@@ -208,28 +208,36 @@
 				</section>
 
 				<section>
+					<h2>Copy Parties</h2>
+					<p>Predecessores das demoparties</p>
+					<p>Surgiram e desapareceram na década de 1980, após intervenção da policia.</p>
+					<p>Eventos onde as pessoas se juntavam para trocar copias do software, partilha de criações pessoais e técnicas</p>
+					<p>A ideia de juntar grupos de pessoas para partilhar o gosto sobre a computação e arte manteve-se.</p>
+				</section>
+				
+				<section>
 					<h2>BBS</h2>
 					<p>Ou <b>B</b>ulletin <b>B</b>oard <b>S</b>ystem, são os predecessor de foruns e redes sociais</p>
 					<p>Terminais remotos acessiveis por dial-up</p>
 					<p>Informação era transmitida por caracteres ASCII ou ANSI art para superar limites da ligação.</p>
 					<p>Com a melhoria das ligações tornou-se possivel partilhar ficheiros.</p>
+					<p>Cracks, Demos, arte ANSI começaram a ser partilhados remotamente.</p>
 				</section>
-
-				<section>
-					<h2>Copy Parties</h2>
-					<p>Predecessores das demoparties</p>
-					<p>Eventos onde as pessoas se juntavam para trocar copias do software</p>
-					<p>Após intervenção da policia terminaram, mas a ideia permaneceu.</p>
-				</section>
-
 
 				<section>
 					<h2>Demoparty</h2>
-					<p>Eventos públicos que decorrem em vários paises anualmente</p>
-					<p>Participação internacional</p>
+					<table><tr><td>
+					<p>Eventos públicos que decorrem em vários paises durante o ano</p>
+					<p>Participação internacional de todos os lados do mundo</p>
 					<p>Competições & Concertos ao vivo & Apresentações</p>
 					<p>Visualização de produções de anos anteriores</p>
 					<p>Muita diversão, histórias da industria, show-off de projectos pessoais e novos amigos!</p>
+					</td>
+					<td>
+						<img style="width:200px" src="img/demo_party.jpg">
+						<img style="width:200px" src="img/demo_party_2.jpg">
+					</td>
+					</tr></table>
 				</section>
 
 			</div>
@@ -240,9 +248,15 @@
 		<script src="reveal.js"></script>
 		<script>
 			Reveal.initialize({ slideNumber: true }).then( () => {
-				//Reveal.slide(5);
-			});
-					
+				let idx = parseInt(window.localStorage.getItem("slide"));
+				if(idx >= 0)
+					Reveal.slide(window.localStorage.getItem("slide"));
+
+				Reveal.on( 'slidechanged', event => {
+					window.localStorage.setItem("slide", event.indexh);
+				})
+			})
+
 			
 		</script>
 	</body>
