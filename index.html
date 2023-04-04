@@ -4,22 +4,44 @@
 		<meta charset="utf-8">
 		<title>Introdução a Demoscene</title>
 		<link rel="stylesheet" href="reveal.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&amp;display=swap" rel="stylesheet">
+
 		<style>
 			html,body{
-				font-family:Verdana;
+				font-family:"Amiko", sans-serif;
 				font-size:30px;
+			}
+
+			.reveal{
+				background-image: url(img/bg.png);
+				background-size: cover;
+			}
+
+			.slides{
+				background-color:rgba(255, 179, 0,90%);
+				color:rgb(46, 46, 46);
+			}
+
+			.bgIframe{
+				width:100%;
+				height:100%;
+				position:absolute;
+				top:0;
+				left:0;
 			}
 		</style>
 	</head>
 	<body>
+		<!--<iframe class="bgIframe" src="https://cables.gl/view/63d3e5db198bbcd53ea6f3d6"></iframe>-->
 		<div class="reveal">
 			<div class="slides">
 
 				<section>
 					<h2>Introdução a Demoscene</h2>
-					<p>Uma explicação muito resumida sobre esta cultura!</p>
-					<br/>
-					<p>Associação Inércia <a href="https://inercia.pt">https://inercia.pt</a></p>
+					<p>Criado por:</p>
+					<p><img src="img/assoc_inercia.svg" style="width:50%;"><br/><a href="https://inercia.pt">https://inercia.pt</a></p>
 				</section>
 
 				<section>
@@ -33,7 +55,7 @@
 						<tr>
 							<td class="fragment" style="text-align:right;"><p>Abreviação de <b>demonstração</b>, que exibe o que os utilizadores conseguem fazer com o computador.</p></td>
 							<td></td>
-							<td class="fragment" style="text-align:left;"><p>É todo o panomara, as pessoas, a historia, o drama e os eventos internacionais anuais.</p></td>
+							<td class="fragment" style="text-align:left;"><p>É todo o panomara, as pessoas, a história, o drama e os eventos internacionais anuais.</p></td>
 						</tr>
 					</table>
 					<aside class="notes">
@@ -43,11 +65,56 @@
 
 				<section>
 					<h2>O que são demos?</h2>
-					<p class="fragment">São aplicações, na maior parte, não interativas, que demostram a habilidade artística de um grupo de pessoas.</p>
-					<p class="fragment">São o resultado do trabalho de programadores, músicos, pintores digitais, modeladores 3D, fotógrafos e editores de video, para criar uma <b>curta</b> animação.</p>
-					<p class="fragment">Criação de arte <b>sem fins lucrativos</b>, independente de conteúdo comercial e em geral sobre alçada <b>Creactive Commons</b>.</p>
+					<p class="fragment">São aplicações, não interativas<br/><span style="font-size:70%;">Demostram a habilidade artística de um grupo de pessoas para criar<br/> uma <b>curta animação</b>.</span></p>
+					<p class="fragment">Produção audio-visual em tempo-real<br/><span style="font-size:70%;">São o resultado do trabalho de programadores, músicos, pintores digitais,<br/> modeladores 3D, fotógrafos e editores de video.</span></p>
+					<p class="fragment">Sem fins lucrativos<br/><span style="font-size:70%;">Criação de arte independente de conteúdo comercial e em geral sobre<br/> alçada <b>Creactive Commons</b>.</span></p>
 				</section>
 
+				<section>
+					<section>
+						<h2>Origem da Demoscene</h2>
+						<p class="fragment">Década de 1980<br/><span style="font-size:70%;">O inicio do acesso a computação em casa.</span></p>
+						<p class="fragment">Cracks de Software<br/><span style="font-size:70%;">Programas de removiam as protecções anti-copia.</span></p>
+						<p class="fragment">Copy Parties<br/><span style="font-size:70%;">Eventos em que os participantes partilhavam copias de software.</span></p>
+						<p class="fragment">Tagging/Grafiti Digital<br/><span style="font-size:70%;">As alterações ao software original eram marcados com a <i>tag</i> do grupo responsável.</span></p>
+						<p class="fragment">Bulletin Board Systems (BBS)<br/><span style="font-size:70%;">Antecessor do IRC, foruns e redes sociais, terminais remotos acessiveis por <i>dial-up</i>.</span></p>
+					</section>
+
+					<section>
+						<h2>Cracks de Software</h2>
+						<table>
+							<tr>
+								<td>
+									<p>Na década dos anos 80 era comum a produção de cracks para copiar software</p>
+									<p>Os cracks tinham também uma vertente artistica, como se tratassem grafíti digitais</p>
+									<p>Estes programas possuiam gráficos animados, efeitos e música únicos</p>
+									<p></p>
+								</td>
+								<td>
+									<img style="width:320px" src="img/blue_brothers.png"><br/>
+									<img style="width:320px" src="img/mini putt.gif">
+								</td>
+							</tr>
+						</table>
+					</section>
+
+					<section>
+						<h2>Copy Parties</h2>
+						<p>Predecessores das demoparties</p>
+						<p>Surgiram e desapareceram na década de 1980, após intervenção da policia.</p>
+						<p>Eventos onde as pessoas se juntavam para trocar copias do software, partilha de criações pessoais e técnicas</p>
+						<p>A ideia de juntar grupos de pessoas para partilhar o gosto sobre a computação e arte manteve-se.</p>
+					</section>
+
+					<section>
+						<h2>BBS</h2>
+						<p>Ou <b>B</b>ulletin <b>B</b>oard <b>S</b>ystem, são os predecessor de foruns e redes sociais</p>
+						<p>Terminais remotos acessiveis por dial-up</p>
+						<p>Informação era transmitida por caracteres ASCII ou ANSI art para superar limites da ligação.</p>
+						<p>Com a melhoria das ligações tornou-se possivel partilhar ficheiros.</p>
+						<p>Cracks, Demos, arte ANSI começaram a ser partilhados remotamente.</p>
+					</section>
+				</section>
 				<section>
 					<section>
 						<h2>Demonstrar o que? (Parte 1)</h2>
@@ -130,6 +197,13 @@
 				
 				<section>
 					<section>
+						<h2>Plataformas da Demoscene</h2>
+						<p>Primeiros computadores caseiros de 8 bits<br/><span style="font-size:70%">Início e década de 1980: <b>Spectrum ZX</b>, <b>Commodore 64</b>, <b>MSX</b></span></p>
+						<p>Computadores de 16 bits<br/><span style="font-size:70%">Fim de 1980 e inicio de 1990: <b>Commodore Amiga</b>, <b>MS-DOS</b></span></p>
+						<p>Computação moderna de 32/64 bits<br/><span style="font-size:70%">Fim da década de 1990 e tempo atual: <b>Windows PC</b>, <b>Apple</b>, <b>Browser</b></span></p>
+						<p>Consolas de Jogos<br/><span style="font-size:70%"><b>Megadrive</b>, <b>Playstation</b>, <b>Nintendo 64</b>, etc...</span></p>
+						</section>
+					<section>
 							<h2>Plataformas da Demoscene (8bit)</h2>
 							<p>Consolas de jogos e computadores com recursos limitados, que não possuiam mais de 16 cores e resoluções muito baixas, funcionam em geral ligados ao ecrã da TV com moduladores.</p>
 							<table style="width:100%">
@@ -188,41 +262,7 @@
 					</section>
 				</section>
 
-				<section>
-					<h2>Pirataria Informática</h2>
-					<table>
-						<tr>
 
-						<td>
-					<p>Na década dos anos 80 era comum a produção de cracks para copiar software</p>
-					<p>Os cracks tinham também uma vertente artistica, como se tratassem grafíti digitais</p>
-					<p>Estes programas possuiam gráficos animados, efeitos e música únicos</p>
-					<p></p>
-						</td>
-						<td>
-							<img style="width:320px" src="img/blue_brothers.png"><br/>
-							<img style="width:320px" src="img/mini putt.gif">
-						</td>
-						</tr>
-					</table>
-				</section>
-
-				<section>
-					<h2>Copy Parties</h2>
-					<p>Predecessores das demoparties</p>
-					<p>Surgiram e desapareceram na década de 1980, após intervenção da policia.</p>
-					<p>Eventos onde as pessoas se juntavam para trocar copias do software, partilha de criações pessoais e técnicas</p>
-					<p>A ideia de juntar grupos de pessoas para partilhar o gosto sobre a computação e arte manteve-se.</p>
-				</section>
-				
-				<section>
-					<h2>BBS</h2>
-					<p>Ou <b>B</b>ulletin <b>B</b>oard <b>S</b>ystem, são os predecessor de foruns e redes sociais</p>
-					<p>Terminais remotos acessiveis por dial-up</p>
-					<p>Informação era transmitida por caracteres ASCII ou ANSI art para superar limites da ligação.</p>
-					<p>Com a melhoria das ligações tornou-se possivel partilhar ficheiros.</p>
-					<p>Cracks, Demos, arte ANSI começaram a ser partilhados remotamente.</p>
-				</section>
 
 				<section>
 					<h2>Demoparty</h2>
@@ -247,7 +287,12 @@
 
 		<script src="reveal.js"></script>
 		<script>
-			Reveal.initialize({ slideNumber: true }).then( () => {
+			Reveal.initialize({
+				width: 960,
+  				height: 600,
+				  margin: 0.1,
+   				slideNumber: true 
+			}).then( () => {
 				let idx = parseInt(window.localStorage.getItem("slide"));
 				if(idx >= 0)
 					Reveal.slide(window.localStorage.getItem("slide"));
@@ -255,7 +300,7 @@
 				Reveal.on( 'slidechanged', event => {
 					window.localStorage.setItem("slide", event.indexh);
 				})
-			})
+			});
 
 			
 		</script>
