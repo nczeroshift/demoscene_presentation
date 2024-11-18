@@ -1,3 +1,7 @@
+<!--
+Apresentação sobre a demoscene
+Associação Inércia 2023
+-->
 <!doctype html>
 <html lang="en">
 	<head>
@@ -443,6 +447,60 @@
 				</section>
 
 				<section>
+					<section>
+						<h2>Pessoas da Demoscene</h2>
+						<p>Industria de Jogos</p>
+						<p>Orgas</p>
+					</section>
+					<section>
+						<p><a href="https://demozoo.org/sceners/3756/">Simon Kissel (Scamp)</a><br/>
+							Breakpoint<br>
+							Revision<br>
+							Underground Conference<br>
+						</p>
+					</section>
+					<section>
+						<p><a href="https://twitter.com/idsoftwaretiago">Tiago Sousa(ninja bear)</a><br>
+							Crytek<br>
+							ID software
+						</p>
+					</section>
+					<section>
+						<p>
+							<a href="https://usesthis.com/interviews/alex.evans/">Alex Evans (statix)</a><br/>
+							Dreams<br>
+							Little Big Planet
+						</p>
+					</section>
+					<section>
+						<p>
+							<a href="https://iquilezles.org/"><br/>Inigo Quilez (IQ)</a><br>
+							Pixar<br>
+							Oculus<br>
+							Adobe
+						</p>
+					</section>
+					<section>
+						<p><a href="https://demozoo.org/sceners/124/">Jaakko Iisalo (Croaker)</a><br/>
+							Rovio<br>
+							Angry Birds
+						</p>
+					</section>
+					<section>
+						<p><a href="https://demozoo.org/sceners/124/">Jaakko Iisalo (Croaker)</a><br/>
+							Rovio</p>
+					</section>
+					<section>
+						<p><a href="https://demozoo.org/sceners/207/">Konstantinos Pataridis (Navis)</a><br/>
+							</p>
+					</section>
+					<section>
+						<p><a href="https://demozoo.org/sceners/207/">Matt Westcott  (Gasman)</a><br/>
+						</p>
+					</section>
+				</section>
+
+				<section>
 					<h2>Links</h2>
 					<a href="https://inercia.party/">Inércia Demoparty</a>
 					<p style="font-size:70%;padding-left:5%;padding-right:5%;">Demoparty nacional.</p>
@@ -458,7 +516,7 @@
 
 				<section>
 					<h2>Obrigado!</h2>
-					<p>2023</p>
+					<p id="currentYear"></p>
 				</section>
 			</div>
 
@@ -467,6 +525,8 @@
 
 		<script src="reveal.js"></script>
 		<script>
+			currentYear.textContent = (new Date()).getFullYear();
+
 			Reveal.initialize({
 				width: 960,
   				height: 600,
@@ -481,8 +541,6 @@
 					window.localStorage.setItem("slide", event.indexh);
 				})
 			});
-
-			
 		</script>
 	</body>
 </html>
